@@ -36,6 +36,15 @@ export default class GameControl {
   // 创建一个键盘按下的相应函数
   keyDownHandler(event: KeyboardEvent) {
     // 修改direction属性
+    if (this.direction === "ArrowLeft" && event.key === "ArrowRight") {
+      return;
+    } else if (this.direction === "ArrowRight" && event.key === "ArrowLeft") {
+      return;
+    } else if (this.direction === "ArrowUp" && event.key === "ArrowDown") {
+      return;
+    } else if (this.direction === "ArrowDown" && event.key === "ArrowUp") {
+      return;
+    }
     this.direction = event.key;
   }
 
