@@ -1,2 +1,2 @@
 #### 贪吃蛇
-TypeSrcipt+Webpack
+TypeScript+Webpack
